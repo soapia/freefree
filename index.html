@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Auto-Send Ceasefire Requests</title>
+  <link rel="icon" type="image/x-icon" href="assets/icon.jpg">
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="header">
+
+
+    <h1>TELL CONGRESS:<br>STOP ARMING ISRAEL
+      <br>CEASEFIRE NOW
+    </h1>
+  </div>
+  <div class="subline">
+    <img src="assets/email.png" alt="iPhone sending an email">
+    <h2>Automatically send daily emails to your representatives using Apple Shortcuts, urging them to do everything in
+      their power to stop this onslaught against the Palestinian people.</h2>
+  </div>
+
+
+  <div class="directions">
+
+
+    <!-- Task 2: Download Apple Shortcut -->
+    <li class="un-listed">
+      <section>
+        <p class="step">1.</p>
+        <div>
+          <p>Download the Apple Shortcut <a
+              href="https://www.icloud.com/shortcuts/89aa0a3037084dcdb50cf74ba229faf9"><strong>here</strong></a> and carefully follow the
+            instructions on the screen. Run the shortcut by clicking the icon in the bottom right corner of the screen.
+          </p>
+          <br>
+          <p>Note: You will be prompted to enter your congressional district and email.</p>
+          <p class="notice" id="congressional-district-notice">Where can I find my <i>congressional district?</i></p>
+        </div>
+      </section>
+      <form id="findDistrictForm">
+        <label for="addressInput">If you don't know your congressional district, enter your address to find and copy it
+          to your clipboard:</label>
+
+        <input type="text" id="addressInput" placeholder="House Number, Street, State, Zip Code" required>
+        <button type="button" onclick="findAndCopyDistrict()">Find Congressional District</button>
+      </form>
+    </li>
+    <!-- Task 3: Create Apple Shortcuts Automation -->
+    <li class="un-listed">
+      <section>
+        <p class="step">2.</p>
+        <section class="column">
+          <p>Create an automation in Apple Shortcuts to run this shortcut daily:</p>
+        </section>
+      </section>
+      <ol>
+          <li>Click the Automation <img src="assets/automation.png" class="in-text-icon" alt="automation icon"> tab, and click the <img src="assets/plus.png" class="in-text-icon" alt="plus sign icon"> button to create a new automation.</li>
+          <li>Create a new personal automation.</li>
+          <li>Select the trigger "Time of Day" and set it to run once a day.</li>
+          <li>Add the action "Run Shortcut" and choose the shortcut you downloaded.</li>
+          <li>Save the automation, and you're good to go!</li>
+        </ol>
+      <a href="https://support.apple.com/guide/shortcuts/create-a-new-personal-automation-apdfbdbd7123/ios" class="notice">More Automation Help</a>
+    </li>
+  </div>
+  <p class="gz4c"> made with ♥ by <a href="https://genzforchange.org/" target="_">gen-z for change</a>'s meddling
+    kids</p>
+  <script>
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

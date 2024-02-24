@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Mobile-first styles */
+body {
+  font-family: 'Helvetica', sans-serif; /* Example font, replace with your choice */
+  background-color: #000000; /* Black similar to the flag */
+  color: #ffffff; /* White text */
+  padding: 20px;
+  max-width: 1000px;
+  margin:auto;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+h2, h3 {
+  line-height: 35px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+}
+
+a {
+  color: #ea0706; /* White links */
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  
+}
+
+/* a:visited {
+  color: black; /* White visited links */
+/* } */
+
+p {
+  line-height: 28px;
+  margin: 0;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.directions {
+  background-color: green; /* Red similar to the flag */
+  padding: 20px;
+}
+
+
+
+.header {
+  background-color: #ea0606; /* Red similar to the flag */
+  padding: 20px;
+  text-align: center;
+}
+
+.subline{
+  margin: 20px 30px;
+  display: flex;
+  align-items: center;
+
+  
+  & img{
+    max-width: 100px;
+    padding-right: 20px;
+  }
+}
+
+.column{
+  flex-direction: column;
+  & li{
+    margin: 5px;
+    padding: 5px;
+  }
+
+  & ol{
+    color: black;
+  }
+}
+
+ol li{
+  margin: 5px !important;
+  padding: 5px !important;
+  font-size: 15px;
+}
+
+/* Find District Form */
+#findDistrictForm{
+  margin: 20px;
+  background-color: #53c153;
+  padding: 20px;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  display: none;
+
+  & *{
+    margin: 5px;
+  }
+
+  & label{
+    line-height: 25px;
+    font-size: 15px;
+    color: black;
+    
+  }
+
+  & input{
+    width: 80%;
+    max-width: 500px;
+    padding: 5px 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  & button{
+    font-size: 14px;
+    padding: 5px 20px;
+    background-color: green;
+    font-weight: 400;
+    color: white;
+    border: none;
+    border-radius: 100px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+  }
+
+}
+
+li{
+  background-color: white;
+  margin: 20px 0 10px;
+  color: black;
+  padding: 30px 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+
+  & section{
+    margin:auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 800px;
+    justify-content: center;
+  }
+
+  & .step{
+    font-size: 3em;
+    margin: 15px 20px 0;
+  }
+}
+
+.in-text-icon{
+  height: 1em;
+  width: auto;
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.un-listed{
+  list-style-type: none;
+}
+
+.notice{
+  color: #ea0706;
+  font-size: 15px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.notice:active, a:active{
+  color: #8a0f0f;
+
+}
+
+.show{
+  display: flex !important;
+}
+
+.gz4c{
+  font-size: 15px;
+  text-align: right;
+  & a{
+    color: white;
+  }
+}
+
+
+
+@media (max-width: 600px) {
+  body {
+    padding: 0px;
+    margin: 0;
+  }
+
+  .subline {
+  
+  & img{
+    display: none;
+  }
+  & h2{
+    font-size: 18px;
+    line-height: 30px;
+    letter-spacing: .5px;
+  }
+}  
+
+  .gz4c{
+    text-align: center;
+    font-size: 10px;
+  }
+
+}
