@@ -4,15 +4,15 @@ async function findAndCopyDistrict() {
     // Make an HTTP request to the Google Civic Information API
     const response = await fetch(`https://www.googleapis.com/civicinfo/v2/representatives?key=AIzaSyCkF0IXCTkZoCfBubxmd0JWaqLa6oTEXK4&roles=legislatorUpperBody&roles=legislatorLowerBody&address=${encodeURIComponent(addressInput)}`);
     
-    if (!response.ok) {
-      alert("Please enter a full, valid address.")
-    } else {
+    // if (!response.ok) {
+    // alert("Please enter a full, valid address.")
+    // } else {
       const data = await response.json();
       console.log(data)
       const congressionalDistrict = formatCongressionalDistrict(data);
       copyToClipboard(congressionalDistrict);
       alert("Congressional District found. Information copied to clipboard:\n" + congressionalDistrict);
-    }
+    // }
     
     // const data = await response.json();
     // Extract and format congressional district information
