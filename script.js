@@ -12,12 +12,22 @@ async function findAndCopyDistrict() {
       if (response.ok) {
         const congressionalDistrict = formatCongressionalDistrict(data);
         // copyToClipboard(congressionalDistrict);
-        small.innerHTML = 'Success! Your congressional district is: ' + congressionalDistrict + ' <br>Copy it to use it in the shortcut!'
+        small.innerHTML = 'Success! Your congressional district is: ' + `<br><input class="district-to-copy" id="district-to-copy" value = ${congressionalDistrict}>`+'Remember this or copy to your clipboard.'
+
+        //copies to clipboard!
+        const copyText = document.getElementById('district-to-copy')
+          copyText.select()
+          copyText.focus()
+          copyText.setSelectionRange(0, 10)
+    navigator.clipboard.writeText(copyText.value)
+        $('small').removeClass("input-error")
+
         // alert("Congressional District found. Information copied to clipboard:\n" + congressionalDistrict);
       } else {
         small.innerHTML = "Please enter a full, valid address."
+          $('small').addClass("input-error")
       }
-      small.style.display = "block"
+      small.style.display = "flex"
     // }
     
     // const data = await response.json();
@@ -72,4 +82,5 @@ cdNotice.click(function(){
 $('#findDistrictForm').toggleClass('show')
   console.log("the function is like working")
 })
+
 
