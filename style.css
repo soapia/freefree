@@ -11,7 +11,7 @@ body {
   font-family: 'Helvetica', sans-serif; /* Example font, replace with your choice */
   background-color: #000000; /* Black similar to the flag */
   color: #ffffff; /* White text */
-  padding: 20px;
+  padding: 0px 20px 20px 20px;
   max-width: 1000px;
   margin:auto;
 }
@@ -30,8 +30,8 @@ h2, h3 {
   font-size: 18px;
 }
 
-a {
-  color: #ea0706; /* White links */
+.directions a {
+  color: #E4312b; /* White links */
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
@@ -52,14 +52,65 @@ p {
 }
 
 .directions {
-  background-color: green; /* Red similar to the flag */
+  background-color: #149954; /* Green similar to the flag */
   padding: 20px;
+}
+
+nav{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.banner{
+  background-position: 80% 70%;
+  background-size: cover;
+  background-repeat: none;
+  margin-bottom: 10px;
+  min-height: 50px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.banner a{
+  transition: .2s
+}
+
+.banner a:active{
+  color: #E4312b;
+  transition: .2s
 }
 
 
 
+.congress-banner{
+  background-image:url(assets/mo-hamouda.jpg) ;
+  margin-right:1px;
+}
+.university-banner{
+  background-image:url(assets/encampment.png) ;
+  margin-left:1px;
+}
+
+.banner a{
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin: 10px;
+
+
+}  
+
+
+
 .header {
-  background-color: #ea0606; /* Red similar to the flag */
+  background-color: #E4312b; /* Red similar to the flag */
   padding: 20px;
   text-align: center;
 }
@@ -97,7 +148,7 @@ ol li{
 /* Find District Form */
 #findDistrictForm{
   margin: 20px;
-  background-color: #53c153;
+  background-color: #149954;
   padding: 20px;
   /* display: flex; */
   flex-direction: column;
@@ -131,7 +182,7 @@ ol li{
   & button{
     font-size: 14px;
     padding: 5px 20px;
-    background-color: green;
+    background-color: #149954;
     font-weight: 400;
     color: white;
     border: none;
@@ -143,7 +194,7 @@ ol li{
 }
 
 .input-error{
-  color : #ea0606 !important;
+  color : #E4312b !important;
   background-color: white;
   padding : 5px 10px;
 }
@@ -190,7 +241,7 @@ li{
   }
 
   & span{
-    color: #ea0606;
+    color: #E4312b;
     font-size: 13px;
   }
 }
@@ -207,7 +258,7 @@ li{
 }
 
 .notice{
-  color: #ea0706;
+  color: #E4312b;
   font-size: 15px;
   text-decoration: underline;
   cursor: pointer;

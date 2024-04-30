@@ -83,4 +83,3 @@ $('#findDistrictForm').toggleClass('show')
   console.log("the function is like working")
 })
 
-
