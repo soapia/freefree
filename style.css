@@ -8,12 +8,15 @@ html {
 
 /* Mobile-first styles */
 body {
-  font-family: 'Helvetica', sans-serif; /* Example font, replace with your choice */
-  background-color: #000000; /* Black similar to the flag */
-  color: #ffffff; /* White text */
+  font-family: 'Helvetica', sans-serif;
+  /* Example font, replace with your choice */
+  background-color: #000000;
+  /* Black similar to the flag */
+  color: #ffffff;
+  /* White text */
   padding: 0px 20px 20px 20px;
   max-width: 1000px;
-  margin:auto;
+  margin: auto;
 }
 
 h1 {
@@ -23,7 +26,8 @@ h1 {
   font-style: italic;
 }
 
-h2, h3 {
+h2,
+h3 {
   line-height: 35px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
@@ -32,11 +36,12 @@ h2, h3 {
 }
 
 .directions a {
-  color: #E4312b; /* White links */
+  color: #E4312b;
+  /* White links */
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
-  
+
 }
 
 /* a:visited {
@@ -53,18 +58,19 @@ p {
 }
 
 .directions {
-  background-color: #149954; /* Green similar to the flag */
+  background-color: #149954;
+  /* Green similar to the flag */
   padding: 20px;
 }
 
-nav{
+nav {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-between;
 }
 
-.banner{
+.banner {
   background-position: 80% 70%;
   background-size: cover;
   background-repeat: none;
@@ -77,27 +83,28 @@ nav{
 
 }
 
-.banner a{
+.banner a {
   transition: .2s
 }
 
-.banner a:active{
+.banner a:active {
   color: #E4312b;
   transition: .2s
 }
 
 
 
-.congress-banner{
-  background-image:url(assets/mo-hamouda.jpg) ;
-  margin-right:1px;
-}
-.university-banner{
-  background-image:url(assets/encampment.png) ;
-  margin-left:1px;
+.congress-banner {
+  background-image: url(assets/mo-hamouda.jpg);
+  margin-right: 1px;
 }
 
-.banner a{
+.university-banner {
+  background-image: url(assets/encampment.png);
+  margin-left: 1px;
+}
+
+.banner a {
   color: white;
   text-decoration: none;
   font-size: 18px;
@@ -106,48 +113,50 @@ nav{
   margin: 10px;
 
 
-}  
+}
 
 
 
 .header {
-  background-color: #E4312b; /* Red similar to the flag */
+  background-color: #E4312b;
+  /* Red similar to the flag */
   padding: 20px;
   text-align: center;
 }
 
-.subline{
+.subline {
   margin: 20px 30px;
   display: flex;
   align-items: center;
 
-  
-  & img{
+
+  & img {
     max-width: 100px;
     padding-right: 20px;
   }
 }
 
-.column{
+.column {
   flex-direction: column;
-  & li{
+
+  & li {
     margin: 5px;
     padding: 5px;
   }
 
-  & ol{
+  & ol {
     color: black;
   }
 }
 
-ol li{
+ol li {
   margin: 5px !important;
   padding: 5px !important;
   font-size: 15px;
 }
 
 /* Find District Form */
-#findDistrictForm{
+#findDistrictForm {
   margin: 20px;
   background-color: #149954;
   padding: 20px;
@@ -160,18 +169,18 @@ ol li{
 
   display: none;
 
-  & *{
+  & * {
     margin: 5px;
   }
 
-  & label{
+  & label {
     line-height: 25px;
     font-size: 15px;
     color: black;
-    
+
   }
 
-  & #addressInput{
+  & #addressInput {
     width: 80%;
     max-width: 500px;
     padding: 5px 10px;
@@ -180,7 +189,7 @@ ol li{
     font-style: normal;
   }
 
-  & button{
+  & button {
     font-size: 14px;
     padding: 5px 20px;
     background-color: #149954;
@@ -194,30 +203,51 @@ ol li{
 
 }
 
-.input-error{
-  color : #E4312b !important;
+#schools {
+  margin: 20px;
+  background-color: #149954;
+  padding: 20px;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  display: none;
+
+  & li{
+    color: white;
+    background-color: none !important;
+  }
+
+  }
+
+
+.input-error {
+  color: #E4312b !important;
   background-color: white;
-  padding : 5px 10px;
+  padding: 5px 10px;
 }
 
-.district-to-copy{
+.district-to-copy {
   margin-top: 10px;
   width: 50px;
   text-align: center;
-  margin:auto;
+  margin: auto;
   padding: 5px 10px;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-small{
+small {
   /* display: flex; */
   flex-direction: column;
   align-items: center;
 }
 
-li{
+li.un-listed {
   background-color: white;
   margin: 20px 0 10px;
   color: black;
@@ -227,8 +257,8 @@ li{
   font-style: normal;
 
 
-  & section{
-    margin:auto;
+  & section {
+    margin: auto;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -236,55 +266,57 @@ li{
     justify-content: center;
   }
 
-  & .step{
+  & .step {
     font-size: 3em;
     margin: 15px 20px 0;
   }
 
-  & span{
+  & span {
     color: #E4312b;
     font-size: 13px;
   }
 }
 
-.in-text-icon{
+.in-text-icon {
   height: 1em;
   width: auto;
   margin-left: 3px;
   margin-right: 3px;
 }
 
-.un-listed{
+.un-listed {
   list-style-type: none;
 }
 
-.notice{
+.notice {
   color: #E4312b;
   font-size: 15px;
   text-decoration: underline;
   cursor: pointer;
 }
 
-.notice:active, a:active{
+.notice:active,
+a:active {
   color: #8a0f0f;
 
 }
 
-.show{
+.show {
   display: flex !important;
 }
 
-.gz4c{
+.gz4c {
   font-size: 15px;
   text-align: right;
-  & a{
+
+  & a {
     color: white;
   }
 }
 
 #alert {
-    color: white;
-    font-style: italic;
+  color: white;
+  font-style: italic;
 }
 
 
@@ -296,18 +328,19 @@ li{
   }
 
   .subline {
-  
-  & img{
-    display: none;
-  }
-  & h2{
-    font-size: 18px;
-    line-height: 30px;
-    letter-spacing: .5px;
-  }
-}  
 
-  .gz4c{
+    & img {
+      display: none;
+    }
+
+    & h2 {
+      font-size: 18px;
+      line-height: 30px;
+      letter-spacing: .5px;
+    }
+  }
+
+  .gz4c {
     text-align: center;
     font-size: 10px;
   }

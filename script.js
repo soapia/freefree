@@ -83,3 +83,10 @@ $('#findDistrictForm').toggleClass('show')
   console.log("the function is like working")
 })
 
+var sNotice = $('#school-notice')
+
+sNotice.click(function(){
+$('#schools').toggleClass('show')
+  console.log("the function is like working")
+})
+
